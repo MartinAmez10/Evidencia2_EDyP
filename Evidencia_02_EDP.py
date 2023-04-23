@@ -1,4 +1,31 @@
+import csv
+import sys
+
+datos_grabar = dict()
+datos_leer = dict()
+
 datos = {}
+
+try:
+
+  with open("logs_libros.csv","r", newline="") as archivo:
+      lector = csv.reader(archivo)
+      next(lector)
+      
+      for identificador, titulo, autor, genero, año_publicacion, ISBN, fecha_adquisicion in lector:
+          datos_leer[int(identificador)] = (titulo, autor, genero, año_publicacion, ISBN, fecha_adquisicion)
+except FileNotFoundError:
+    print("El archivo no se encontró, se procede a trabajar con un conjunto vacío\n\n")
+except Exception:
+    Excepcion = sys.exc_info()
+    print(f"Ocurrió un problema del tipo: {Excepcion[0]}")
+    print(f"Mensaje del error: {Excepcion[1]}")
+else:
+  print(datos_leer)
+  datos = datos_leer
+  #for identificador, titulo, autor, genero, año_publicacion, ISBN, fecha_adquisicion in lector:
+    #datos[identificador] = (titulo, autor, genero, año_publicacion, ISBN, fecha_adquisicion)
+
 while True:
   print("Hola! selecciona una opcion que quieras realizar (escribe el numero):")
   print("[1]- Registrar nuevo ejemplar")
@@ -127,3 +154,13 @@ while True:
   elif op_main == 3:
     # Sale del programa
     break
+
+for j in datos:
+  datos_grabar = datos
+archivo = open('logs_libros.csv', 'w', newline='')
+
+grabador = csv.writer(archivo)
+grabador.writerow(('identificador', 'titulo', 'autor', 'genero', 'año_publicacion', 'ISBN', 'fecha_adquisicion'))
+#'identificador, titulo, autor, genero, año_publicacion, ISBN, fecha_adquisicion'
+grabador.writerows([(identificador, datos[0], datos[1], datos[2], datos[3], datos[4], datos[5]) for identificador, datos in datos_grabar.items()])
+archivo.close()
