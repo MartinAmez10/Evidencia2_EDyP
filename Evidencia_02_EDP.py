@@ -1,6 +1,6 @@
 import csv
 import sys
-import openpyxl
+#import openpyxl
 
 datos_grabar = dict()
 datos_leer = dict()
