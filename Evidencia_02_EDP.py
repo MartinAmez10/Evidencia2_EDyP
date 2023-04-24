@@ -150,13 +150,28 @@ while True:
           
             # Exportación a MsExcel
             if op_exportar == 2:
-              #excel = openpyxl.workbook()
-              #hoja = excel("sheet")
-              #hoja.title = "LIBROS"
-              #for espacio in range(1,8):
-                #hoja.cell(row=espacio, column=2).value
-                #excel.save
-              print("Se exporto correctamente!")
+              #libro = openpyxl.Workbook()
+              #hoja = libro["Sheet"]
+              #hoja.title = "primera"
+              #hoja["A1"].value = "Identificador"
+              #hoja["B1"].value = "Titulo"
+              #hoja["C1"].value = "Autor"
+              #hoja["D1"].value = "Genero"
+              #hoja["E1"].value = "Año de publicacion"
+              #hoja["F1"].value = "ISBN"
+              #hoja["G1"].value = "Fecha adquisicion"
+
+              #fila = 0
+              #hoja["A2"].value = fila + 1
+              #hoja["B2"].value = datos[identificador][0]
+              #hoja["C2"].value = datos[identificador][1]
+              #hoja["D2"].value = datos[identificador][2]
+              #hoja["F2"].value = datos[identificador][3]
+              #hoja["G2"].value = datos[identificador][4]
+              #hoja["H2"].value = datos[identificador][5]
+
+              #libro.save("reporte_libros.xlsx")
+              print("Se exporto de manera correcta")
               break
           elif op_reporte == 2:
             datos_grabar = dict()
@@ -197,13 +212,28 @@ while True:
           
             # Exportación a MsExcel
             if op_exportar == 2:
-              #excel = openpyxl.workbook()
-              #hoja = excel("sheet")
-              #hoja.title = "LIBROS"
-              #for espacio in range(1,8):
-                #hoja.cell(row=espacio, column=2).value
-                #excel.save
-              print("Se exporto correctamente!")
+              #libro = openpyxl.Workbook()
+              #hoja = libro["Sheet"]
+              #hoja.title = "primera"
+              #hoja["A1"].value = "Identificador"
+              #hoja["B1"].value = "Titulo"
+              #hoja["C1"].value = "Autor"
+              #hoja["D1"].value = "Genero"
+              #hoja["E1"].value = "Año de publicacion"
+              #hoja["F1"].value = "ISBN"
+              #hoja["G1"].value = "Fecha adquisicion"
+
+              #fila = 0
+              #hoja["A2"].value = fila + 1
+              #hoja["B2"].value = datos[identificador][0]
+              #hoja["C2"].value = datos[identificador][1]
+              #hoja["D2"].value = datos[identificador][2]
+              #hoja["F2"].value = datos[identificador][3]
+              #hoja["G2"].value = datos[identificador][4]
+              #hoja["H2"].value = datos[identificador][5]
+
+              #libro.save("reporte_libros.xlsx")
+              print("Se exporto de manera correcta")
               break
 
           elif op_reporte == 3:
@@ -245,13 +275,28 @@ while True:
           
             # Exportación a MsExcel
             if op_exportar == 2:
-              #excel = openpyxl.workbook()
-              #hoja = excel("sheet")
-              #hoja.title = "LIBROS"
-              #for espacio in range(1,8):
-                #hoja.cell(row=espacio, column=2).value
-                #excel.save
-              print("Se exporto correctamente!")
+              #libro = openpyxl.Workbook()
+              #hoja = libro["Sheet"]
+              #hoja.title = "primera"
+              #hoja["A1"].value = "Identificador"
+              #hoja["B1"].value = "Titulo"
+              #hoja["C1"].value = "Autor"
+              #hoja["D1"].value = "Genero"
+              #hoja["E1"].value = "Año de publicacion"
+              #hoja["F1"].value = "ISBN"
+              #hoja["G1"].value = "Fecha adquisicion"
+
+              #fila = 0
+              #hoja["A2"].value = fila + 1
+              #hoja["B2"].value = datos[identificador][0]
+              #hoja["C2"].value = datos[identificador][1]
+              #hoja["D2"].value = datos[identificador][2]
+              #hoja["F2"].value = datos[identificador][3]
+              #hoja["G2"].value = datos[identificador][4]
+              #hoja["H2"].value = datos[identificador][5]
+
+              #libro.save("reporte_libros.xlsx")
+              print("Se exporto de manera correcta")
               break
 
           elif op_reporte == 4:
@@ -285,13 +330,28 @@ while True:
           
             # exportacion a MsExcel
             if op_exportar == 2:
-              #excel = openpyxl.workbook()
-              #hoja = excel("sheet")
-              #hoja.title = "LIBROS"
-              #for espacio in range(1,8):
-                #hoja.cell(row=espacio, column=2).value
-                #excel.save
-              print("Se exporto correctamente!")
+              #libro = openpyxl.Workbook()
+              #hoja = libro["Sheet"]
+              #hoja.title = "primera"
+              #hoja["A1"].value = "Identificador"
+              #hoja["B1"].value = "Titulo"
+              #hoja["C1"].value = "Autor"
+              #hoja["D1"].value = "Genero"
+              #hoja["E1"].value = "Año de publicacion"
+              #hoja["F1"].value = "ISBN"
+              #hoja["G1"].value = "Fecha adquisicion"
+
+              #fila = 0
+              #hoja["A2"].value = fila + 1
+              #hoja["B2"].value = datos[identificador][0]
+              #hoja["C2"].value = datos[identificador][1]
+              #hoja["D2"].value = datos[identificador][2]
+              #hoja["F2"].value = datos[identificador][3]
+              #hoja["G2"].value = datos[identificador][4]
+              #hoja["H2"].value = datos[identificador][5]
+
+              #libro.save("reporte_libros.xlsx")
+              print("Se exporto de manera correcta")
               break
           elif op_reporte == 5:
             # Regresa al menú anterior
