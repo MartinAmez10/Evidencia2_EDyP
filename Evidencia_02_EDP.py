@@ -1,6 +1,7 @@
 import csv
 import sys
 #import openpyxl
+#No permite utilizar ese modulo
 
 datos_grabar = dict()
 datos_leer = dict()
